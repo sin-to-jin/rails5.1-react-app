@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react-dom';
+import React, { Component } from 'react';
 
 export default class Hello extends Component {
 
