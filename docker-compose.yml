@@ -8,9 +8,19 @@ services:
     ports:
       - 3000:3000
     command: rails s -b 0.0.0.0
+    links: 
+      - hypernova
   webpack:
     image: rails:5.1
     volumes:
       - ./:/var/app
     working_dir: /var/app
     command: ./bin/webpack-watcher
+  hypernova:
+    image: node:6.9
+    volumes:
+      - ./:/var/app
+    working_dir: /var/app
+    command: node hypernova.js
+    environment:
+      HYPERNOVA_PORT: 3030

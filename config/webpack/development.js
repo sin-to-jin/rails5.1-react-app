@@ -4,8 +4,9 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 const sharedConfig = require('./shared.js')
+const serverConfig = require('./server.js');
 
-module.exports = merge(sharedConfig.config, {
+module.exports = [merge(sharedConfig.config, {
   devtool: 'sourcemap',
 
   stats: {
@@ -21,4 +22,4 @@ module.exports = merge(sharedConfig.config, {
       debug: true
     })
   ]
-})
+}), serverConfig];
