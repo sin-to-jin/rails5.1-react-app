@@ -1,24 +1,10 @@
-# README
+# Rails5.1-react-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails5.1 + Webpacker + React(ServerSide Rendering) Sample
 
-Things you may want to cover:
+## Detail
 
-* Ruby version
+詳細な解説はこちらの記事で
 
-* System dependencies
+[モダンJS on Rails5.1（Webpacker+React+ServerSide Rendering）](http://qiita.com/KeitaMoromizato/items/ea9cf6e787d851ed61e6)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
